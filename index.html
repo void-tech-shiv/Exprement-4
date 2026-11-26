@@ -1,37 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiment 4 - Themed Layout</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container padding-container">
-        <header class="header margin-vertical">
-            <h1>Themed Layout Demo</h1>
-            <button id="theme-toggle" class="button-base">Toggle Theme</button>
-        </header>
-        
-        <main class="main-content margin-vertical">
-            <section class="card card-shadow">
-                <h2 class="card-title heading-font">Card Title</h2>
-                <p class="card-text body-font">This is a sample card demonstrating the themed layout with CSS custom properties and mixins.</p>
-                <button class="card-button button-base">Click Me</button>
-            </section>
-            
-            <section class="card card-shadow">
-                <h2 class="card-title heading-font">Another Card</h2>
-                <p class="card-text body-font">This shows how reusable components can be styled consistently across themes.</p>
-                <button class="card-button button-base">Action Button</button>
-            </section>
-        </main>
-        
-        <footer class="footer body-font">
-            <p>&copy; 2023 Themed Layout Experiment</p>
-        </footer>
-    </div>
-    
-    <script src="script.js"></script>
-</body>
-</html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="An interactive CSS design token and theme switching experiment."><title>Theme Studio | Design System Playground</title><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header class="shell header"><a class="brand" href="#main">THEME<span> / STUDIO</span></a><span class="eyebrow">WEB EXPERIMENT 04</span></header>
+<main class="shell" id="main"><section class="hero"><div><p class="eyebrow">DESIGN SYSTEM / PLAYGROUND</p><h1>One interface.<br><span>Multiple identities.</span></h1><p>Explore how CSS custom properties change a complete interface without duplicating its components.</p></div><div class="theme-controls"><h2>Appearance</h2><label for="theme-select">Theme preference</label><select id="theme-select" disabled><option value="system">System default</option><option value="light">Light</option><option value="dark">Dark</option></select><button id="theme-toggle" type="button" disabled>Toggle light / dark</button><p id="theme-status" role="status">Using system appearance.</p><noscript>Theme follows your system preference. Enable JavaScript to override it.</noscript></div></section>
+<section aria-labelledby="tokens-title"><p class="eyebrow">01 / FOUNDATIONS</p><h2 id="tokens-title">Live design tokens</h2><div class="tokens"><article class="token"><div class="swatch bg"></div><h3>Background</h3><code>--color-bg</code></article><article class="token"><div class="swatch surface"></div><h3>Surface</h3><code>--color-surface</code></article><article class="token"><div class="swatch accent"></div><h3>Accent</h3><code>--color-accent</code></article><article class="token"><div class="swatch text"></div><h3>Text</h3><code>--color-text</code></article></div></section>
+<section aria-labelledby="components-title"><p class="eyebrow">02 / COMPONENTS</p><h2 id="components-title">Reusable components</h2><div class="cards"><article class="card"><span class="eyebrow">COMPONENT 01</span><h3>Theme-aware card</h3><p>The same markup inherits background, text, borders and accents from the selected theme.</p><button id="demo-action" type="button" disabled>Test primary action</button><p id="action-status" class="small" role="status"></p></article><article class="card"><span class="eyebrow">COMPONENT 02</span><h3>Consistent spacing</h3><p>Shared spacing, typography and radius tokens keep each component visually consistent.</p><button class="secondary" id="details-toggle" type="button" aria-expanded="false" aria-controls="details" disabled>Show design details</button><div id="details" hidden><p class="small">Cards use the same surface token, spacing scale and border radius in both themes.</p></div></article></div></section>
+</main><footer class="shell footer"><p>Theme Studio · HTML, CSS &amp; JavaScript learning experiment</p><a href="https://github.com/void-tech-shiv/Exprement-4">View source</a></footer></body></html>
